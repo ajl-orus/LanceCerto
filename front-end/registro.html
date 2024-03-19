@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+        <title>Registro</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light navbar-header">
+                <div class="container-fluid">
+                    <a class="navbar-brand nav-logo" href="index.html"><img src="images/logo.jpg" alt="Logo" width="150" height="100"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion" aria-controls="navegacion" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navegacion">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                            <li class="nav-item"><a class="nav-link" href="acerca.html">Quem somos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="funcionamiento.html">Como funciona</a></li>
+                            <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto-visitante.html">Contato</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.html">Identifica-se</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-md-12 mt-auto pb-4">
+                <div class="container mt-5 p-2">
+                    <div class="text-center">
+                        <h1 class="text-white">Registro</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container p-3">
+            <section class="seccion-form">
+
+                <form id="formulario-registrar" method="post" class="form-register" action="http://ec2-18-217-116-112.us-east-2.compute.amazonaws.com:8000/registrar">
+                    <label for="nome">Nome:</label><br>
+                    <input class="menu"  type="text" name="nome" id="nome" placeholder="Ingrese su nombre" minlength="1" maxlength="25" required><br>
+                    <label for="sobrenome">Sobrenome:</label><br>
+                    <input class="menu"  type="text" name="sobrenome" id="sobrenome" placeholder="Ingrese su apellido" minlength="1" maxlength="25" required><br>
+                    <label for="email">Email:</label><br>
+                    <input class="menu"  type="email" name="email" id="email" placeholder="email" minlength="10" maxlength="128" required><br>
+                    <label for="usuario">Nome de usuario:</label><br>
+                    <input class="menu"  type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" minlength="6" maxlength="20" required><br>
+                    <label for="password">Contraseña:</label><br>
+                    <input class="menu"  type="password" name="clave" id="clave" minlength="6" maxlength="20" required><br>
+                    <label for="nascimento">Nacimiento:*</label><br>
+                    <input class="menu"  type="date" name="nascimento" id="nascimento" max="2004-11-30" required><br>
+                    <h6 class="anotacion">*Registro unicamente maiores de 18 anos</h6>
+                    <input class="buton" type="submit" value="Registrarse">
+                    <p><a href="login.html">Tenho conta</a></p>
+                </form>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid pt-1 mt-4">
+                <div class="row align-items-center row-cols-1 row-cols-sm-2 row-cols-md-5 p-4 py-2 my-4">
+                    <div class="col col-sm-auto">
+                        <a class="d-flex align-items-center mb-3"><img src="images/logo.jpg" alt="Logo" width="100" height=""></a>
+                    </div>
+                    <div class="col mb-3">
+                        <h5>Conheça-nos</h5>
+                        <ul class="nav flex-column py-2">
+                            <li class="nav-item mb-2"><a href="acerca.html" class="nav-link p-0 text-muted">Quem somos</a></li>
+                            <li class="nav-item mb-2"><a href="funcionamiento.html" class="nav-link p-0 text-muted">Como funciona</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col mb-3">
+                        <h5>Seções</h5>
+                        <ul class="nav flex-column py-2">
+                            <li class="nav-item mb-2"><a href="catalogo.html" class="nav-link p-0 text-muted">Catálogo</a></li>
+                            <li class="nav-item mb-2"><a href="contacto-visitante.html" class="nav-link p-0 text-muted">Contato</a></li>
+                            
+                        </ul>
+                    </div>
+        
+                    <div class="col mb-3">
+                        <h5>Siga-nos nas redes sociais</h5>
+                        <ul class="nav d-flex flex-column flex-sm-row justify-content-around my-1 border-top">
+                            <li class="nav-item mb-2 ms-0 my-3 py-2"><a href="#" class="nav-link p-0 text-light" ><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li class="nav-item mb-2 ms-0 my-3 py-2"><a href="#" class="nav-link p-0 text-light"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li class="nav-item mb-2 ms-0 my-3 py-2"><a href="#" class="nav-link p-0 text-light"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                    </div>
+            
+                </div>    
+            
+                 
+            </div>
+        </footer>
+        
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="bs/js/popper.min.js"></script>
+        <script src="bs/js/bootstrap.min.js"></script>
+        <script src="js/funciones.js"></script>
+        <script>
+            mostrar_respuesta_remota_para_formulario('formulario-registrar')
+        </script>
+
+    </body>
+</html>
